@@ -1,0 +1,22 @@
+<div class="container mt-2">
+<h1 class="text-center mb-0">Update Order</h1>
+
+<form (ngSubmit)="onSubmit()">
+    <label>orderId</label>
+    <input class="form-control" type="text" id="name" name="orderId"
+    [(ngModel)]="order.orderId">
+    <br/>
+
+    <label>orderDate</label>
+    <input class="form-control" type="text" id="name" name="orderDate"
+    [(ngModel)]="order.orderDate">
+    <br/>
+
+    <label>orderStatus</label>
+    <input class="form-control" type="text" id="name" name="orderStatus"
+    [(ngModel)]="order.orderStatus">
+    <br/>
+
+    <button type="submit" class="btn btn-warning">Submit</button>
+</form>
+</div>

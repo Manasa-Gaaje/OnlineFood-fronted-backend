@@ -1,0 +1,32 @@
+a {
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+  }
+  
+  a:hover{
+    text-decoration: none;
+  }
+  
+  .navbar-brand{
+    font-weight: 700;
+    color: white;
+  }
+  .logInBtn{
+    font-weight: 700;
+    margin-right: 15px;
+    border-radius: 0;
+  }
+  #navbarSupportedContent{
+    position: absolute;
+    right: 0;
+  }
+  .btn{
+    border-radius: 0;
+    margin-right: 20px;
+  }
+  .navbar{
+    background-image: url('https://img.freepik.com/free-photo/people-taking-photos-food_23-2149303525.jpg?w=740&t=st=1704778214~exp=1704778814~hmac=be3a3a5832714909129f380641a6ca7609acc96e979fb1fc627ea746f295f3c5');
+    /*background-image: linear-gradient(15deg, #00000025 0%, #00000025 100%);*/
+  }
+  

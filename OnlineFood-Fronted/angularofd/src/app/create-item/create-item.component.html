@@ -1,0 +1,39 @@
+<div class="container mt-2">
+    <h3 class="text-center mb-0">Create Item</h3>
+
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+          <!-- Item Id Input -->
+          <div class="form-group">
+            <label for="itemId">itemId</label>
+            <input type="text" class="form-control" id="itemId" required [(ngModel)]="item.itemId" name="itemId">
+          </div>
+
+          <!-- Item Name Input -->
+        <div class="form-group">
+            <label for="itemName">itemName</label>
+            <input type="text" class="form-control" id="itemName" required [(ngModel)]="item.itemName" name="itemName">
+          </div>
+
+          <!-- Quantity Input -->
+        <div class="form-group">
+            <label for="quantity">quantity</label>
+            <input type="text" class="form-control" id="quantity" required [(ngModel)]="item.quantity" name="quantity">
+          </div>
+ 
+       <!-- Submit Button -->
+          <button type="submit" class="btn btn-success btn-block">Submit</button>
+        <br/>
+    </form>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+

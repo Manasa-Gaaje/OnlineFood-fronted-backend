@@ -1,0 +1,44 @@
+.wrapper{
+  min-height: 80vh;
+  background-image: url('https://img.freepik.com/free-photo/people-taking-photos-food_23-2149303525.jpg?w=740&t=st=1704778214~exp=1704778814~hmac=be3a3a5832714909129f380641a6ca7609acc96e979fb1fc627ea746f295f3c5');
+  background-repeat: no-repeat;
+ 
+  max-width: inherit;
+  height: 600px;
+  margin-top: -21px;
+}
+.row{
+  padding: 20px;
+}
+
+.card{
+  
+  position: absolute;
+  right: 150px;
+  margin-top: 5px;
+  
+}
+
+.logInBtn{
+  border-radius: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+.signUpBtn{
+  border-radius: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-bottom: 25px;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+}
+
+a:hover{
+  text-decoration: none;
+}

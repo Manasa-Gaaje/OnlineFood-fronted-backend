@@ -1,0 +1,39 @@
+<div class="container mt-2">
+    <h3 class="text-center mb-0">Create Restaurant</h3>
+
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+          <!-- Restaurant Id Input -->
+          <div class="form-group">
+            <label for="restaurantId">restaurantId</label>
+            <input type="text" class="form-control" id="restaurantId" required [(ngModel)]="restaurant.restaurantId" name="restaurantId">
+          </div>
+
+          <!-- Restaurant Name Input -->
+        <div class="form-group">
+            <label for="restaurantName">restaurantName</label>
+            <input type="text" class="form-control" id="restaurantName" required [(ngModel)]="restaurant.restaurantName" name="restaurantName">
+          </div>
+
+          <!-- Restaurant ManagerName Input -->
+        <div class="form-group">
+            <label for="managerName">managerName</label>
+            <input type="text" class="form-control" id="managerName" required [(ngModel)]="restaurant.managerName" name="managerName">
+        </div>
+
+         <!-- Restaurant contactNumber Input -->
+         <div class="form-group">
+          <label for="contactNumber">contactNumber</label>
+          <input type="text" class="form-control" id="contactNumber" required [(ngModel)]="restaurant.contactNumber" name="contactNumber">
+      </div>
+
+           
+       <!-- Submit Button -->
+          <button type="submit" class="btn btn-success btn-block">Submit</button>
+        <br/>
+    </form>
+   </div>
+</div>
+
+
+

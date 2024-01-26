@@ -1,0 +1,42 @@
+<div class="container mt-2">
+<h1 class="text-center mb-0">Update Customer</h1>
+
+<form (ngSubmit)="onSubmit()">
+    <label>customerId</label>
+    <input class="form-control" type="text" id="name" name="customerId"
+    [(ngModel)]="customer.customerId">
+    <br/>
+
+    <label>fullName</label>
+    <input class="form-control" type="text" id="name" name="fullName"
+    [(ngModel)]="customer.fullName">
+    <br/>
+
+    <label>age</label>
+    <input class="form-control" type="text" id="name" name="age"
+    [(ngModel)]="customer.age">
+    <br/>
+
+    <label>gender</label>
+    <input class="form-control" type="text" id="name" name="gender"
+    [(ngModel)]="customer.gender">
+    <br/>
+
+    <label>mobileNumber</label>
+    <input class="form-control" type="text" id="name" name="mobileNumber"
+    [(ngModel)]="customer.mobileNumber">
+    <br/>
+
+    <label>email</label>
+    <input class="form-control" type="text" id="name" name="email"
+    [(ngModel)]="customer.email">
+    <br/>
+
+    <label>password</label>
+    <input class="form-control" type="text" id="name" name="password"
+    [(ngModel)]="customer.password">
+    <br/>
+
+    <button type="submit" class="btn btn-warning">Submit</button>
+</form>
+</div>

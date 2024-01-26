@@ -1,0 +1,60 @@
+<div class="admin-panel">
+    <div class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            
+            
+            <img src="https://img.freepik.com/premium-vector/social-avatar-stories-gradient-frame_41737-3.jpg?w=740" height="200px" width="150px" alt="Admin Panel Logo" class="logo-img" align="center"><br>
+            Admin Panel
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:4200/bills">
+                    <i class="fas fa-plane"></i> Bill Lists
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:4200/items">
+                    <i class="fas fa-map-marker-alt"></i> Item Lists
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:4200/orders">
+                    <i class="fas fa-map-marker-alt"></i> Order Lists
+                </a>
+            </li>
+        </ul>
+        <div class="navbar-text">
+            <p>Welcome, Admin!</p>
+        </div>
+    </div>
+    
+    <div class="content mt-4">
+        <div class="jumbotron text-center animated fadeIn">
+            <h1 class="display-4">Welcome to the Admin Page</h1>
+            <p class="lead">Manage and oversee the Restaurant and bills.</p>
+            <hr class="my-4">
+            <p>These are the navigation links to access different lists.</p>
+            <a href="http://localhost:4200/bills/addnewbill" class="btn btn-primary">Add Bills</a>
+            
+            <!-- Add space between buttons -->
+            <div style="margin-top: 10px;"></div>
+            
+            <!-- Add another button -->
+            <a href="http://localhost:4200/items/addnewitem" class="btn btn-secondary">Add Items</a>
+
+            <!-- Add space between buttons -->
+            <div style="margin-top: 10px;"></div>
+            
+            <!-- Add another button -->
+            <a href="http://localhost:4200/orders/addneworder" class="btn btn-secondary">Add Orders</a>
+       
+       
+        <div style="margin-top: 10px;"></div>
+            
+            <!-- Add another button -->
+            <a href="http://localhost:4200/customers" class="btn btn-secondary">View Customers</a>
+        </div>
+        
+        <router-outlet></router-outlet>
+    </div>
+</div>

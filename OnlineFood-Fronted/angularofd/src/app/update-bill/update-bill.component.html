@@ -1,0 +1,22 @@
+<div class="container mt-2">
+<h1 class="text-center mb-0">Update Bill</h1>
+
+<form (ngSubmit)="onSubmit()">
+    <label>billId</label>
+    <input class="form-control" type="text" id="name" name="billId"
+    [(ngModel)]="bill.billId">
+    <br/>
+
+    <label>billDate</label>
+    <input class="form-control" type="text" id="name" name="billDate"
+    [(ngModel)]="bill.billDate">
+    <br/>
+
+    <label>totalItem</label>
+    <input class="form-control" type="text" id="name" name="totalItem"
+    [(ngModel)]="bill.totalItem">
+    <br/>
+
+    <button type="submit" class="btn btn-warning">Submit</button>
+</form>
+</div>

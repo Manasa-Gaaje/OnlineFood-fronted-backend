@@ -1,0 +1,27 @@
+<div class="container mt-2">
+<h1 class="text-center mb-0">Update Restaurant</h1>
+
+<form (ngSubmit)="onSubmit()">
+    <label>restaurantId</label>
+    <input class="form-control" type="text" id="name" name="restaurantId"
+    [(ngModel)]="restaurant.restaurantId">
+    <br/>
+
+    <label>restaurantName</label>
+    <input class="form-control" type="text" id="name" name="restaurantName"
+    [(ngModel)]="restaurant.restaurantName">
+    <br/>
+
+    <label>managerName</label>
+    <input class="form-control" type="text" id="name" name="managerName"
+    [(ngModel)]="restaurant.managerName">
+    <br/>
+
+    <label>contactNumber</label>
+    <input class="form-control" type="text" id="name" name="contactNumber"
+    [(ngModel)]="restaurant.contactNumber">
+    <br/>
+
+    <button type="submit" class="btn btn-warning">Submit</button>
+</form>
+</div>

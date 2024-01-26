@@ -1,0 +1,37 @@
+<div class="container mt-2">
+    <h3 class="text-center mb-0">Create Bill</h3>
+
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+          <!-- Bill Id Input -->
+          <div class="form-group">
+            <label for="billId">billId</label>
+            <input type="text" class="form-control" id="billId" required [(ngModel)]="bill.billId" name="billId">
+          </div>
+
+          <!-- Bill Date Input -->
+        <div class="form-group">
+            <label for="billDate">billDate</label>
+            <input type="text" class="form-control" id="billDate" required [(ngModel)]="bill.billDate" name="billDate">
+          </div>
+
+          <!-- Total Item Input -->
+        <div class="form-group">
+            <label for="totalItem">totalItem</label>
+            <input type="text" class="form-control" id="totalItem" required [(ngModel)]="bill.totalItem" name="totalItem">
+          </div>
+ 
+       <!-- Submit Button -->
+          <button type="submit" class="btn btn-success btn-block">Submit</button>
+        <br/>
+    </form>
+   </div>
+</div>
+
+
+
+
+
+
+
+

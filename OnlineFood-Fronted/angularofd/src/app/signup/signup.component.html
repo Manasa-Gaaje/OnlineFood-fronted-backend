@@ -1,0 +1,37 @@
+<div class="wrapper">
+    <div class="row">
+        <div class="card col-md-6 offset-md-3 shadow-lg p-3 mb-5 bg-light rounded">
+            <h3 class="text-center mb-4">Sign Up</h3>
+            <p class="text-muted text-center">Create an  account to easy for Order.</p>
+            
+            <div class="form-group">
+                <label for="fullName">fullName:</label>
+                <input (blur)="validateName(); enableButton();" class="form-control" type="text" name="fullName" id="fullName" [(ngModel)]="customer.fullName">
+                <small *ngIf="fullNameFlag" class="text-danger">Invalid User Name</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password" name="password" id="password" [(ngModel)]="customer.password" minlength="5" maxlength="50" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mobileNumber">mobileNumber:</label>
+                <input (blur)="validatePhone(); enableButton();" class="form-control" type="tel" name="mobileNumber" id="phone" [(ngModel)]="customer.mobileNumber">
+                <small *ngIf="mobileNumberFlag" class="text-danger">Invalid Mobile Number</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input (blur)="validateEmail(); enableButton();" class="form-control" type="email" name="email" id="email" [(ngModel)]="customer.email">
+                <small *ngIf="emailFlag" class="text-danger">Invalid Email</small>
+            </div>
+            
+            <div class="text-center">
+                <button [disabled]="buttonFlag" class="btn btn-success" (click)="signUp()" href="login">
+                    Register
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

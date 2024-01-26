@@ -1,0 +1,22 @@
+<div class="container mt-2">
+<h1 class="text-center mb-0">Update Item</h1>
+
+<form (ngSubmit)="onSubmit()">
+    <label>itemId</label>
+    <input class="form-control" type="text" id="name" name="itemId"
+    [(ngModel)]="item.itemId">
+    <br/>
+
+    <label>itemName</label>
+    <input class="form-control" type="text" id="name" name="itemName"
+    [(ngModel)]="item.itemName">
+    <br/>
+
+    <label>quantity</label>
+    <input class="form-control" type="text" id="name" name="quantity"
+    [(ngModel)]="item.quantity">
+    <br/>
+
+    <button type="submit" class="btn btn-warning">Submit</button>
+</form>
+</div>

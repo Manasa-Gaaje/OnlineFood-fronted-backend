@@ -1,0 +1,28 @@
+.background-container
+{
+    background-color:aqua;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.text
+{
+    color: brown;
+    font-size: 36px;
+}
+
+.p
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img
+{
+   max-width: 100%;
+   height: auto;
+   margin-top: 20px;
+   
+}
+
